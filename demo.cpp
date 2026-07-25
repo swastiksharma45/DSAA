@@ -3,14 +3,12 @@
 #include<math.h>
 using namespace std;
  void print(int n){
-    int num=1;
-    for(int i=1;i<=n+1;i++){
-        for(int j=1;j<=i;j++){
-            cout<<num<<" ";
-            num=num+1;
+        for(int i=0;i<n;i++){
+            for(char ch='A';ch<='A'+i;ch++){
+                cout<<ch;
+            }
+            cout<<endl;
         }
-        cout<<endl;
-    }
 }
  
 int main() {
