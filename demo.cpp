@@ -29,7 +29,7 @@ void print1(int n){
 int main() {
     int n;
     cin >> n;
-    print(n);
     print1(n);
+    print(n);
 }
 
