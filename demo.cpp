@@ -14,9 +14,22 @@ void print(int n) {
         cout <<endl;
     }
 }
+void print1(int n){
+    for(int i=0;i<n;i++)
+    {
+    for(int j=i;j<n-1;j++){
+            cout<<" ";
+        }
+        for(int j=0;j<=n*i-2*i;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
 int main() {
     int n;
     cin >> n;
     print(n);
+    print1(n);
 }
 
