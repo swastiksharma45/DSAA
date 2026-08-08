@@ -2,9 +2,17 @@
 #include<bits/stdc++.h>
 #include<math.h>
 using namespace std;
-int main(){
-    string car[]={"Corvette","Ferrari","Audi"};
-    cout<<car[0]<<endl;
-    return 0;
+vector<int> selectionSort(vector<int>& nums){
+    int n=nums.size();
+    for(int i=0;i<n-1;i++){
+        int minIndex=i;
+        for(int j=i;j<n;j++){
+            if(nums[j]<nums[minIndex]){
+                minIndex=j;
+            } 
+        }
+        swap(nums[i],nums[minIndex]);
+    }
+    return nums;
 }
 
