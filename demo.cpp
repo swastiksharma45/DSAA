@@ -2,17 +2,28 @@
 #include<bits/stdc++.h>
 #include<math.h>
 using namespace std;
-vector<int> selectionSort(vector<int>& nums){
-    int n=nums.size();
+void selection_sort(int arr[], int n){
     for(int i=0;i<n-1;i++){
-        int minIndex=i;
-        for(int j=i;j<n;j++){
-            if(nums[j]<nums[minIndex]){
-                minIndex=j;
-            } 
+        int min=i;
+    for(int j=i;j<n;j++){
+        if(arr[j]<arr[min]){
+            min=j;
         }
-        swap(nums[i],nums[minIndex]);
     }
-    return nums;
+         swap(arr[i],arr[min]);
+    }
+}
+int main(){
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    selection_sort(arr,n);
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
 }
 
