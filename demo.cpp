@@ -10,8 +10,8 @@ void insertionSort(int arr[], int n){
             j--;
         }
     }
-
 }
+//insertion sort with best time complexcity
 int main(){
     int n;
     cin>>n;
