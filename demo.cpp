@@ -2,24 +2,16 @@
 #include<bits/stdc++.h>
 #include<math.h>
 using namespace std;
-void bubble_sort(int arr[],int n){
-    for(int i=n-1;i>=1;i--){
-        int didSwap=0;
-        for(int j=0;j<i;j++){
-            if(arr[j]>arr[j+1]){
-                int temp=arr[j+1];
-                arr[j+1]=arr[j];
-                arr[j]=temp;
-                didSwap=1;
-            }
+void insertionSort(int arr[], int n){
+    for(int i=0;i<n;i++){
+        int j=i;
+        while(j>0 && arr[j-1]>arr[j]){
+            swap(arr[j-1],arr[j]);
+            j--;
         }
-        if(didSwap==0){
-            break;
-        }
-        cout<<"runs"<<endl;
     }
+
 }
-// So this will be the code for best time complexcity for bubble sort which is O(n)
 int main(){
     int n;
     cin>>n;
@@ -27,7 +19,7 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-    bubble_sort(arr,n);
+    insertionSort(arr,n);
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
     }
