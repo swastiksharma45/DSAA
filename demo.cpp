@@ -2,16 +2,9 @@
 #include<bits/stdc++.h>
 #include<math.h>
 using namespace std;
-void insertionSort(int arr[], int n){
-    for(int i=0;i<n;i++){
-        int j=i;
-        while(j>0 && arr[j-1]>arr[j]){
-            swap(arr[j-1],arr[j]);
-            j--;
-        }
-    }
+void merge_sort(int arr[], int low, int high){
+//merge sort algo is lengthy
 }
-//insertion sort with best time complexcity
 int main(){
     int n;
     cin>>n;
