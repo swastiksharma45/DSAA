@@ -49,9 +49,8 @@ void mS(vector<int>&arr,int low,int high){
 void repeat(){
     int n;
     cin>>n;
-    string name="Swastik";
     for(int i=0;i<n;i++){
-       cout<<name<<endl; 
+       cout<<i<<endl; 
     }
 }
 
