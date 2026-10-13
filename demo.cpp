@@ -46,19 +46,16 @@ void mS(vector<int>&arr,int low,int high){
 */
 //proper correct mergesort code
 
-
-
-int main(){
+void repeat(){
     int n;
     cin>>n;
-    int arr[n];
+    string name="Swastik";
     for(int i=0;i<n;i++){
-        cin>>arr[i];
+       cout<<name<<endl; 
     }
-    insertionSort(arr,n);
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
-    }
-    return 0;
+}
+
+int main(){
+    repeat();
 }
 
