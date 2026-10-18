@@ -46,15 +46,16 @@ void mS(vector<int>&arr,int low,int high){
 */
 //proper correct mergesort code
 
-void repeat(){
+void sum(){
     int n;
     cin>>n;
-    for(int i=n;i>=1;i--){
-       cout<<i<<endl; 
+    int a=0;
+    for(int i=0;i<n;i++){
+        a=a+i;
     }
+    cout<<a;
 }
-
 int main(){
-    repeat();
+    sum();
 }
 
